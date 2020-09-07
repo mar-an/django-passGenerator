@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<div class="container text-center">
+<h2>This is a new homepage</h2>
+<ul>
+      {% for x in charactersNumbers %}
+        <li>{{ x }}</li>
+    {% endfor %}
+</ul>
+<form action="{% url 'password' %}">
+    <select class="" name="lenght">
+
+
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="40">40</option>
+
+        </select>
+        <br><br>
+        <input type="submit" value="Generate Password" class="btn btn-primary">
+
+</form>
+    </div>
